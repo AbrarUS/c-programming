@@ -9,11 +9,11 @@ will sum up all the scores entered, and output sum.
 #include<stdio.h>
 #include<stdlib.h>
 
-main() {
+void main() {
 
 	double score, sum = 0, grade = 0, gradeNum = 0, avg = 0, pass = 0, totalGrades = 0;
 	printf("Enter a test score(-1 to quit):");
-	scanf_s("%lf", &grade);
+	scanf("%lf", &grade);
 	while (grade != -1)
 	{
 
@@ -28,7 +28,7 @@ main() {
 			totalGrades++;
 		}
 		printf("Enter a test score(-1 to quit):");
-		scanf_s("%lf", &grade);
+		scanf("%lf", &grade);
 	}
 	avg = 100 * pass / totalGrades;
 	printf("\nThe percent of passing grades is : %.2lf\n", avg);
