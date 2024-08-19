@@ -22,7 +22,7 @@ main() {
 			printf("Pass: %.2lf\n", pass);
 		}
 		if (grade > 100 || grade <0) {
-			printf("Error, grade is not in grade range\n");
+			printf("Error!!! grade is not in grade range\n");
 		}
 		if (grade >= 0 && grade <= 100) {
 			totalGrades++;
